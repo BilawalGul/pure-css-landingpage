@@ -12,14 +12,16 @@ Dark green: #28b485
     padding:0;
     box-sizing: border-box;
 }
-
+html{
+    font-size: 8px;
+}
 body{
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     color:#777;
     line-height: 1.7;
-    padding:40px;
+    padding:4rem;
 }
 .header{
     height: 95vh;
@@ -31,12 +33,10 @@ body{
     position: relative;
 
 }
-.logo-box{
+.header__logo-box{
     position:absolute;
-    top:40px;
-    left:40px;
-}
-.logo-box{
+    top:4rem;
+    left:4rem;
     animation-name:logoAnimate;
     animation-duration: 1s;
 }
@@ -44,7 +44,7 @@ body{
 @keyframes logoAnimate{
     0%{
         
-        transform: translateX(60px);
+        transform: translateX(6rem);
     }
     100%{
         opacity: 1;
@@ -52,11 +52,11 @@ body{
     }
 }
 
-.logo{
+.header__logo{
     width:70px;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top:40%;
     left:50%;
@@ -67,22 +67,22 @@ body{
     color:#fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
-.primary-main-text{
-    font-size: 60px;
+.primary-text--main{
+    font-size: 6rem;
     font-weight: 400;
     display: block;
-    letter-spacing: 20px;
+    letter-spacing: 2rem;
     animation-name:MoveFromLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 }
-.primary-sub-text{
+.primary-text--sub{
     display: block;
     font-weight: 700;
-    letter-spacing: 27.5px;
-    font-size: 18px;
+    letter-spacing: 2.75rem;
+    font-size: 1.8rem;
     animation-name:MoveFromRight;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -91,11 +91,11 @@ body{
 @keyframes MoveFromLeft{
     0%{
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     80%{
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
 
     100%{
@@ -107,11 +107,11 @@ body{
 @keyframes MoveFromRight{
     0%{
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
     80%{
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
 
     100%{
@@ -122,9 +122,9 @@ body{
 .btn:link,
 .btn:visited{
     text-transform: uppercase;
-    padding:20px 40px;
+    padding:2rem 4rem;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5rem;
     font-weight: 700;
     display: inline-block;
     transition: all 0.3s;
@@ -132,14 +132,14 @@ body{
 
 }
 .btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+    transform: translateY(-.3rem);
+    box-shadow: 0rem 1rem 2rem rgba(0,0,0,0.4);
 }
 .btn:active{
-    transform:translateY(-1px);
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    transform:translateY(-.1rem);
+    box-shadow: 0rem .5rem 1rem rgba(0,0,0,0.4);
 }
-.btn-white{
+.btn--white{
     background:#fff;
     color:#777;
 }
@@ -148,7 +148,7 @@ body{
     display: inline-block;
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 5rem;
     position: absolute;
     top:0;
     left: 0;
@@ -156,7 +156,7 @@ body{
     transition: all 0.4s;
 
 }
-.btn-white::after{
+.btn--white::after{
     background:#fff;
     
 }
