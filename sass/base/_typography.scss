@@ -1,0 +1,33 @@
+body{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color:$dark-gray-color;
+    line-height: 1.7;
+    padding:4rem;
+}
+.primary-text{
+    color:$color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+
+    &--main{
+        font-size: 6rem;
+        font-weight: 400;
+        display: block;
+        letter-spacing: 2rem;
+        animation-name:MoveFromLeft;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+    }
+    &--sub{
+        display: block;
+        font-weight: 700;
+        letter-spacing: 2.75rem;
+        font-size: 1.8rem;
+        animation-name:MoveFromRight;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+    }
+}
