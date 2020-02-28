@@ -1,11 +1,24 @@
 // color schms
-$ligt-green-color:#7ed56f;
+$light-green-color:#7ed56f;
 $dark-green-color:#1c8a09c9;
 $dark-gray-color:#777;
 $color-white:#fff;
 $color-black:#000;
 // end color schms
 
+$light-gray-color:rgb(216, 216, 216);
+
+
+// font-size
+
+$default-font-size:1.6rem;
+
 // font-family
 $font-family: "Lato", sans-serif;
 // end font-family
+
+
+// grid 
+$grid-width:114rem;
+$gutter-vertical:8rem;
+$gutter-horizontal:6rem;

@@ -50,3 +50,27 @@
     }
 
 }
+
+.btn-text{
+    &:link,
+    &:visited{
+        font-size: $default-font-size;
+        color:$dark-green-color;
+        padding:3px;
+        display: inline-block;
+        border-bottom: 1px solid $dark-green-color;
+        text-decoration: none;
+    }
+
+    &:hover{
+        background:$dark-green-color;
+        color:$color-white;
+        box-shadow: 0rem 1rem 2rem rgba($color-black,0.4);
+        transform: translateY(-2px) ;
+    }
+
+    &:visited{
+        box-shadow: .5rem 1.5rem 2.5rem rgba($color-black,0.4);
+        transform: translateX(0px);
+    }
+}

@@ -1,11 +1,19 @@
+
+// abstracts files
+@import 'abstracts/function';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 // base files
 @import 'base/animation';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
-// abstracts files
-@import 'abstracts/variables';
-// layouts
-@import 'layouts/header';
 // components
 @import 'components/button';
+@import 'components/compositions';
+// layouts
+@import 'layouts/grid';
+@import 'layouts/header';
+// pages
+@import 'pages/home';
+ 
